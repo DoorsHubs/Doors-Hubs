@@ -62,3 +62,8 @@ sound.Looped = true
 sound:Play()
 
 sound.Parent = workspace
+
+game.Lighting.Brightness = 2
+game.Lighting.FogStart = 12
+game.Lighting.FogEnd = 20
+game.Lighting.FogColor = Color3.fromRGB(0,0,0)
