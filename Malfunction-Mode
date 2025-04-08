@@ -11,9 +11,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Darker-TheDarkestGuy/
 --Cave ambience
 local sound = Instance.new("Sound")
 
-sound.SoundId = "rbxassetid://9044553186"
+sound.SoundId = "rbxassetid://1847595153"
 
-sound.Volume = 1
+sound.Volume = 2
 
 sound.Looped = true
 
