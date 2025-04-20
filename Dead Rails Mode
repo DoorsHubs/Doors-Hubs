@@ -38,9 +38,9 @@ local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.
 
 ---====== Display achievement ======---
 achievementGiver({
-    Title = "Survival Mode",
+    Title = "Dead Rails Mode",
     Desc = "Nightmare Began. Becareful!",
-    Reason = "Executed Survival Mode",
+    Reason = "Executed Dead Rails Mode",
     Image = "rbxassetid://16802291466"
 })
 
@@ -322,7 +322,7 @@ end)()
 -- chainsmoker 
 coroutine.wrap(function()
     while true do
-        wait(100)
+        wait(150)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(5)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
@@ -468,7 +468,7 @@ end)()
 -- chainsmoker 
 coroutine.wrap(function()
     while true do
-        wait(75)
+        wait(80)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(5)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
@@ -614,7 +614,7 @@ end)()
 -- chainsmoker 
 coroutine.wrap(function()
     while true do
-        wait(150)
+        wait(250)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(5)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
@@ -760,7 +760,7 @@ end)()
 -- chainsmoker 
 coroutine.wrap(function()
     while true do
-        wait(300)
+        wait(380)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(5)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
