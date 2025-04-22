@@ -1,4 +1,5 @@
 game.ReplicatedStorage.FloorReplicated.ElevatorMusic.Volume = 3
 wait(0)
 game.ReplicatedStorage.FloorReplicated.ElevatorMusic.SoundId = "rbxassetid://9039661312"
-sound:Play(15)
+wait(15)
+sound:Stop()
