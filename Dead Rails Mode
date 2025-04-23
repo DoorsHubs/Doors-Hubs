@@ -1343,7 +1343,7 @@ end)()
 -- chainsmoker 
 coroutine.wrap(function()
     while true do
-        wait(20)
+        wait(110)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(5)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
