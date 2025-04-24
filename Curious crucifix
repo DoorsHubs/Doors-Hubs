@@ -1,0 +1,9 @@
+_G.CR_Uses = 1
+_G.CR_IsCurious = true
+_G.CR_HoldKeyRequired = "false"
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/PublicScripts/refs/heads/main/crucifix_E_A_A"))()
+
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(255, 247, 10)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Curious Light: You got a curious crucifix!",true)
