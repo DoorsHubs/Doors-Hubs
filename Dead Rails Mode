@@ -76,7 +76,7 @@ local entity = spawner.Create({
 		Values = {1.5, 20, 0.1, 1} -- Magnitude, Roughness, FadeIn, FadeOut
 	},
 	Movement = {
-		Speed = 16,
+		Speed = 15,
 		Delay = 2,
 		Reversed = false
 	},
@@ -90,7 +90,7 @@ local entity = spawner.Create({
 	Damage = {
 		Enabled = true,
 		Range = 10,
-		Amount = 20
+		Amount = 15
 	},
 	Crucifixion = {
 		Enabled = true,
@@ -109,6 +109,7 @@ local entity = spawner.Create({
 
 entity:SetCallback("OnSpawned", function()
     print("Entity has spawned")
+
 end)
 
 entity:SetCallback("OnStartMoving", function()
@@ -405,6 +406,13 @@ end)
 
 entity:SetCallback("OnStartMoving", function()
     print("Entity has started moving")
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 205, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: Watch out!",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 205, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: Something big is coming!",true)
 end)
 
 entity:SetCallback("OnEnterRoom", function(room, firstTime)
@@ -437,6 +445,16 @@ end)
 
 entity:SetCallback("OnDespawned", function()
     print("Entity has despawned")
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+ 
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Let's get a bite!",
+    Desc = "Where is my bite?",
+    Reason = "Encounter Giant Zombie",
+    Image = "rbxassetid://13941327339"
+})
 end)
 
 entity:SetCallback("OnDamagePlayer", function(newHealth)
@@ -697,6 +715,17 @@ end)
 
 entity:SetCallback("OnStartMoving", function()
     print("Entity has started moving")
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 205, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: Don't waste any time!",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 205, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: There is something big!",true)
+wait(1)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 205, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: Hide quickly!",true)
 end)
 
 entity:SetCallback("OnEnterRoom", function(room, firstTime)
@@ -729,6 +758,16 @@ end)
 
 entity:SetCallback("OnDespawned", function()
     print("Entity has despawned")
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+ 
+---====== Display achievement ======---
+achievementGiver({
+    Title = "No prey",
+    Desc = "Lemme test my new gun lil dude",
+    Reason = "Encounter Giant Outlaw",
+    Image = "rbxassetid://13941326716"
+})
 end)
 
 entity:SetCallback("OnDamagePlayer", function(newHealth)
@@ -803,7 +842,7 @@ local entity = spawner.Create({
 	Damage = {
 		Enabled = true,
 		Range = 55,
-		Amount = 60
+		Amount = 40
 	},
 	Crucifixion = {
 		Enabled = true,
@@ -843,6 +882,13 @@ end)
 
 entity:SetCallback("OnStartMoving", function()
     print("Entity has started moving")
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 205, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: What's that?",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(255, 146, 3)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Werewolf: Ahoooooooooo.. ",true)
 end)
 
 entity:SetCallback("OnEnterRoom", function(room, firstTime)
@@ -875,6 +921,16 @@ end)
 
 entity:SetCallback("OnDespawned", function()
     print("Entity has despawned")
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+ 
+---====== Display achievement ======---
+achievementGiver({
+    Title = "I want some meats",
+    Desc = "WHERE DID MY MEATS GO!",
+    Reason = "Encounter Werewolf",
+    Image = "rbxassetid://13941328102"
+})
 end)
 
 entity:SetCallback("OnDamagePlayer", function(newHealth)
@@ -989,6 +1045,17 @@ end)
 
 entity:SetCallback("OnStartMoving", function()
     print("Entity has started moving")
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 205, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: What the- Who is that..?",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(255, 181, 253)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Easter Bunny: Want some easter eggs? :3",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(255, 219, 99)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Player: OH! GREAT HEAVEN-",true)
 end)
 
 entity:SetCallback("OnEnterRoom", function(room, firstTime)
@@ -1021,6 +1088,16 @@ end)
 
 entity:SetCallback("OnDespawned", function()
     print("Entity has despawned")
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+ 
+---====== Display achievement ======---
+achievementGiver({
+    Title = "See you soon! :3",
+    Desc = "I want some easter eggs-",
+    Reason = "Encounter Easter Bunny",
+    Image = "rbxassetid://10955318740"
+})
 end)
 
 entity:SetCallback("OnDamagePlayer", function(newHealth)
@@ -1135,6 +1212,13 @@ end)
 
 entity:SetCallback("OnStartMoving", function()
     print("Entity has started moving")
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 205, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: Let's see who is thi- IS THAT HITLER..",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 205, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: HIDE FROM THE HITLER!!! (NIKOLA TESLA)",true)
 end)
 
 entity:SetCallback("OnEnterRoom", function(room, firstTime)
@@ -1167,6 +1251,16 @@ end)
 
 entity:SetCallback("OnDespawned", function()
     print("Entity has despawned")
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+ 
+---====== Display achievement ======---
+achievementGiver({
+    Title = "HITLER",
+    Desc = "Wait.. IS THAT HITLER?",
+    Reason = "Encounter Nikola Tesla",
+    Image = "rbxassetid://8766047004"
+})
 end)
 
 entity:SetCallback("OnDamagePlayer", function(newHealth)
@@ -1281,6 +1375,13 @@ end)
 
 entity:SetCallback("OnStartMoving", function()
     print("Entity has started moving")
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 205, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: Ehh, What's that?",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(255, 219, 99)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Player: It's the slowpoke for sure! XD",true)
 end)
 
 entity:SetCallback("OnEnterRoom", function(room, firstTime)
@@ -1313,6 +1414,16 @@ end)
 
 entity:SetCallback("OnDespawned", function()
     print("Entity has despawned")
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+ 
+---====== Display achievement ======---
+achievementGiver({
+    Title = "The Slowpoke",
+    Desc = "Why is bro so slow",
+    Reason = "Encounter Strange Mask",
+    Image = "rbxassetid://10418960939"
+})
 end)
 
 entity:SetCallback("OnDamagePlayer", function(newHealth)
