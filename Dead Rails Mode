@@ -93,7 +93,7 @@ local entity = spawner.Create({
 		Amount = 15
 	},
 	Crucifixion = {
-		Enabled = true,
+		Enabled = false,
 		Range = 60,
 		Resist = false,
 		Break = true
@@ -223,7 +223,7 @@ local entity = spawner.Create({
 		Amount = 20
 	},
 	Crucifixion = {
-		Enabled = true,
+		Enabled = false,
 		Range = 60,
 		Resist = false,
 		Break = true
@@ -369,7 +369,7 @@ local entity = spawner.Create({
 		Amount = 35
 	},
 	Crucifixion = {
-		Enabled = true,
+		Enabled = false,
 		Range = 70,
 		Resist = false,
 		Break = true
@@ -453,7 +453,7 @@ achievementGiver({
     Title = "Let's get a bite!",
     Desc = "Where is my bite?",
     Reason = "Encounter Giant Zombie",
-    Image = "rbxassetid://13941327339"
+    Image = "rbxassetid://106334188773911"
 })
 end)
 
@@ -532,7 +532,7 @@ local entity = spawner.Create({
 		Amount = 25
 	},
 	Crucifixion = {
-		Enabled = true,
+		Enabled = false,
 		Range = 60,
 		Resist = false,
 		Break = true
@@ -678,7 +678,7 @@ local entity = spawner.Create({
 		Amount = 45
 	},
 	Crucifixion = {
-		Enabled = true,
+		Enabled = false,
 		Range = 110,
 		Resist = false,
 		Break = true
@@ -766,7 +766,7 @@ achievementGiver({
     Title = "No prey",
     Desc = "Lemme test my new gun lil dude",
     Reason = "Encounter Giant Outlaw",
-    Image = "rbxassetid://13941326716"
+    Image = "rbxassetid://81726493757378"
 })
 end)
 
@@ -845,7 +845,7 @@ local entity = spawner.Create({
 		Amount = 40
 	},
 	Crucifixion = {
-		Enabled = true,
+		Enabled = false,
 		Range = 110,
 		Resist = false,
 		Break = true
@@ -929,7 +929,7 @@ achievementGiver({
     Title = "I want some meats",
     Desc = "WHERE DID MY MEATS GO!",
     Reason = "Encounter Werewolf",
-    Image = "rbxassetid://13941328102"
+    Image = "rbxassetid://106419449466718"
 })
 end)
 
@@ -1008,7 +1008,7 @@ local entity = spawner.Create({
 		Amount = 100
 	},
 	Crucifixion = {
-		Enabled = true,
+		Enabled = false,
 		Range = 110,
 		Resist = false,
 		Break = true
@@ -1096,7 +1096,7 @@ achievementGiver({
     Title = "See you soon! :3",
     Desc = "I want some easter eggs-",
     Reason = "Encounter Easter Bunny",
-    Image = "rbxassetid://10955318740"
+    Image = "rbxassetid://136473079375885"
 })
 end)
 
@@ -1175,7 +1175,7 @@ local entity = spawner.Create({
 		Amount = 125
 	},
 	Crucifixion = {
-		Enabled = true,
+		Enabled = false,
 		Range = 110,
 		Resist = false,
 		Break = true
@@ -1259,7 +1259,7 @@ achievementGiver({
     Title = "HITLER",
     Desc = "Wait.. IS THAT HITLER?",
     Reason = "Encounter Nikola Tesla",
-    Image = "rbxassetid://8766047004"
+    Image = "rbxassetid://83500821465086"
 })
 end)
 
@@ -1338,7 +1338,7 @@ local entity = spawner.Create({
 		Amount = 90
 	},
 	Crucifixion = {
-		Enabled = true,
+		Enabled = false,
 		Range = 110,
 		Resist = false,
 		Break = true
@@ -1422,7 +1422,7 @@ achievementGiver({
     Title = "The Slowpoke",
     Desc = "Why is bro so slow",
     Reason = "Encounter Strange Mask",
-    Image = "rbxassetid://10418960939"
+    Image = "rbxassetid://79271426924956"
 })
 end)
 
@@ -1501,7 +1501,7 @@ local entity = spawner.Create({
 		Amount = 15
 	},
 	Crucifixion = {
-		Enabled = true,
+		Enabled = false,
 		Range = 110,
 		Resist = false,
 		Break = true
