@@ -7,3 +7,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/PublicS
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(3, 205, 255)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: You got a guiding crucifix!",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 205, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: Click to the custom entities to crucifix them",true)
