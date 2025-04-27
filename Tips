@@ -1,3 +1,6 @@
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(250, 250, 250)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("He is here..",true)
 wait(60)
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(251, 255, 204)
