@@ -1,0 +1,38 @@
+local s = game:GetObjects("rbxassetid://86812446355526")[1]
+s.Parent = game.Workspace
+
+local ss = s:FindFirstChildWhichIsA("BasePart") or s:FindFirstChildWhichIsA("Part")
+ss.CFrame = game.Workspace.CurrentRooms:GetChildren()[#game.Workspace.CurrentRooms:GetChildren() - 1].Parts.Floor.CFrame + Vector3.new(0,10,0)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ModuleEvents = require(ReplicatedStorage.ClientModules.Module_Events)
+local currentrooms = game.Workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value]
+ModuleEvents.shatter(currentrooms)
+
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Don't stand!",true)
+
+local ultimaroom = game.ReplicatedStorage.GameData.LatestRoom.Value
+local plr = game.Players.LocalPlayer
+local chr = plr.Character or plr.CharacterAdded:Wait()
+wait(1)
+while true do
+wait(math.random(0.5, 1))
+if not chr:GetAttribute("Crouching") then
+game.Players.LocalPlayer.Character.Humanoid.Health -= 5
+game:GetService("ReplicatedStorage").GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Starer"
+end
+if ultimaroom ~= game.ReplicatedStorage.GameData.LatestRoom.Value then 
+s:Destroy()
+
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Where are you",
+    Desc = "Stand up please!",
+    Reason = "Encounter Starer",
+    Image = "rbxassetid://14901081216"
+})
+break end
+end
