@@ -329,7 +329,7 @@ achievementGiver({
     Title = "Two-Faced",
     Desc = "Half by half",
     Reason = "Encounter Pursuit",
-    Image = "rbxassetid://0"
+    Image = "rbxassetid://100063090113048"
 })
 end)
 
@@ -391,7 +391,7 @@ local entity = spawner.Create({
 		Values = {1.5, 20, 0.1, 1} -- Magnitude, Roughness, FadeIn, FadeOut
 	},
 	Movement = {
-		Speed = 300,
+		Speed = 150,
 		Delay = 1,
 		Reversed = false
 	},
@@ -488,7 +488,7 @@ achievementGiver({
     Title = "Tick!",
     Desc = "The time is still ticking",
     Reason = "Encounter Tricker",
-    Image = "rbxassetid://0"
+    Image = "rbxassetid://11799762172"
 })
 end)
 
@@ -514,6 +514,33 @@ end)
 ---====== Run entity ======---
 
 entity:Run()
+    end
+end)()
+
+coroutine.wrap(function()
+    while true do
+        wait(350)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/localplayerr/Doors-stuff/refs/heads/main/Immersive%20mode/Detph"))()
+    end
+end)()
+
+coroutine.wrap(function()
+    while true do
+        wait(260)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Creepy%20Smiler"))()
+    end
+end)()
+
+coroutine.wrap(function()
+    while true do
+        wait(320)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Starer"))()
     end
 end)()
 
