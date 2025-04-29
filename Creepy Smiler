@@ -60,3 +60,14 @@ depthsTer:Destroy()
 
 -- Stop the blue effect when it's no longer needed
 game.TweenService:Create(ColorCorrectionEffect0, TweenInfo.new(7), {TintColor = Color3.new(1, 1, 1)}):Play()
+
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Stop staring",
+    Desc = "Last chance to not look at me",
+    Reason = "Encounter Creepy Smiler",
+    Image = "rbxassetid://12449096575"
+})
