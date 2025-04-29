@@ -332,7 +332,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/vick-png/Impossible-m
     print("Clicked")
 end)
 Section:NewButton("Broken Mode", "ButtonInfo", function()
-game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='#848484'>[Impossible (Remastered) Mode]:🟰Script Succesfully Executed🟰.</font>")
+game:GetService("TextChatService").TextChannels.RBXGeneral:DisplaySystemMessage("<font color='#848484'>[Broken Mode]:🟰Script Succesfully Executed🟰.</font>")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TheDarkMan1334/Broken-mode/refs/heads/main/Broken%20Mode%20.Obfuscated%20lua"))()
     print("Clicked")
 end)
