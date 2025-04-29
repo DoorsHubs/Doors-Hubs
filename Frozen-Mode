@@ -361,7 +361,7 @@ end)()
 -- chainsmoker 
 coroutine.wrap(function()
     while true do
-        wait(220)
+        wait(280)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(5)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
@@ -519,7 +519,7 @@ end)()
 
 coroutine.wrap(function()
     while true do
-        wait(350)
+        wait(400)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/localplayerr/Doors-stuff/refs/heads/main/Immersive%20mode/Detph"))()
@@ -528,7 +528,7 @@ end)()
 
 coroutine.wrap(function()
     while true do
-        wait(260)
+        wait(450)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Creepy%20Smiler"))()
@@ -537,7 +537,7 @@ end)()
 
 coroutine.wrap(function()
     while true do
-        wait(320)
+        wait(550)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Starer"))()
