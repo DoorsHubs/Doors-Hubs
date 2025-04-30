@@ -544,6 +544,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/
     end
 end)()
 
+coroutine.wrap(function()
+    while true do
+        wait(180)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/A-10spawner"))()
+    end
+end)()
+
 game.Lighting.Brightness = 2
 game.Lighting.FogStart = 25
 game.Lighting.FogEnd = 35
