@@ -112,6 +112,16 @@ end)
 
 entity:SetCallback("OnDespawned", function()
     print("Entity has despawned")
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Many eyes watching",
+    Desc = "Look at me please!",
+    Reason = "Encounter Watcher",
+    Image = "rbxassetid://74245106246331"
+})
 end)
 
 entity:SetCallback("OnDamagePlayer", function(newHealth)
