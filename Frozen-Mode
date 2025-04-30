@@ -40,7 +40,7 @@ coroutine.wrap(function()
     while true do
         wait(80)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(5)
+        wait(0)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
 ---====== Create entity ======---
@@ -196,7 +196,7 @@ coroutine.wrap(function()
     while true do
         wait(140)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(5)
+        wait(0)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
 ---====== Create entity ======---
@@ -363,7 +363,7 @@ coroutine.wrap(function()
     while true do
         wait(280)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(5)
+        wait(0)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
 ---====== Create entity ======---
@@ -550,6 +550,24 @@ coroutine.wrap(function()
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/A-10spawner"))()
+    end
+end)()
+
+coroutine.wrap(function()
+    while true do
+        wait(670)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bre29be3/J/refs/heads/main/Rebound%20classic"))()
+    end
+end)()
+
+coroutine.wrap(function()
+    while true do
+        wait(100)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Watcher"))()
     end
 end)()
 
