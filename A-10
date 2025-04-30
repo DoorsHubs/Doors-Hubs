@@ -42,11 +42,6 @@ end
 
 entity.Debug.OnEntityDespawned = function()
     print("Entity has despawned")
-
-end
-
-entity.Debug.OnEntityStartMoving = function()
-    print("Entity started moving")
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
@@ -57,6 +52,10 @@ achievementGiver({
     Reason = "Encounter A-10",
     Image = "rbxassetid://115937397925856"
 })
+end
+
+entity.Debug.OnEntityStartMoving = function()
+    print("Entity started moving")
 end
 
 entity.Debug.OnEntityFinishedRebound = function()
