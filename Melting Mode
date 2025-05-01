@@ -1,0 +1,72 @@
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(242, 133, 24)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Melting Mode Actived!",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(242, 133, 24)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Made By Guest On Discord",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(242, 133, 24)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Credits To Alot Of People (I Can't Say Them All)",true)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAcceleration/Comet-Development/refs/heads/main/Doors/Game/PlayerHealthbars.lua"))()
+
+--Cave ambience
+local sound = Instance.new("Sound")
+
+sound.SoundId = "rbxassetid://9133673285"
+
+sound.Volume = 5
+
+sound.Looped = true
+
+sound:Play()
+
+sound.Parent = workspace
+
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Melting Mode",
+    Desc = "Why there is so hot..",
+    Reason = "Executed Melting Mode",
+    Image = "rbxassetid://12569508484"
+})
+
+coroutine.wrap(function()
+    while true do
+        wait(70)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Boomer"))()
+    end
+end)()
+
+coroutine.wrap(function()
+    while true do
+        wait(180)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Firer"))()
+    end
+end)()
+
+coroutine.wrap(function()
+    while true do
+        wait(350)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/A-183"))()
+    end
+end)()
+
+coroutine.wrap(function()
+    while true do
+        wait(480)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Slioper"))()
+    end
+end)()
