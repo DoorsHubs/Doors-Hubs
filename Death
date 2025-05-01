@@ -431,6 +431,9 @@ local cue2 = Instance.new("Sound")
 	cue2.PlaybackSpeed = 1
 	cue2:Play()
 wait(5)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(128, 12, 4)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("RUN",true)
 local cue = Instance.new("Sound")
 	cue.Parent = game.Workspace
 	cue.Name = "Spawn"
