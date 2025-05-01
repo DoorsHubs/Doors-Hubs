@@ -38,7 +38,7 @@ achievementGiver({
 -- chainsmoker 
 coroutine.wrap(function()
     while true do
-        wait(80)
+        wait(60)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(5)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
@@ -194,7 +194,7 @@ end)()
 -- chainsmoker 
 coroutine.wrap(function()
     while true do
-        wait(140)
+        wait(180)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(5)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
@@ -361,7 +361,7 @@ end)()
 -- chainsmoker 
 coroutine.wrap(function()
     while true do
-        wait(280)
+        wait(320)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(5)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
@@ -519,7 +519,7 @@ end)()
 
 coroutine.wrap(function()
     while true do
-        wait(400)
+        wait(500)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/localplayerr/Doors-stuff/refs/heads/main/Immersive%20mode/Detph"))()
@@ -528,7 +528,7 @@ end)()
 
 coroutine.wrap(function()
     while true do
-        wait(450)
+        wait(650)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Creepy%20Smiler"))()
@@ -537,7 +537,7 @@ end)()
 
 coroutine.wrap(function()
     while true do
-        wait(550)
+        wait(780)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Starer"))()
@@ -546,7 +546,7 @@ end)()
 
 coroutine.wrap(function()
     while true do
-        wait(180)
+        wait(990)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/A-10spawner"))()
@@ -564,7 +564,7 @@ end)()
 
 coroutine.wrap(function()
     while true do
-        wait(100)
+        wait(120)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Watcher"))()
