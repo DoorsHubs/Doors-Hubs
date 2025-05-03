@@ -1,0 +1,104 @@
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(179, 177, 177)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Broken Mode Remake Actived!",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(179, 177, 177)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Original made by TheDarkMan1334",true)
+wait(2)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(179, 177, 177)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Remake made by Guestly",true)
+local Lighting = game:GetService("Lighting")
+local tweenservice = game:GetService("TweenService")
+
+Lighting.Ambient = Color3.new(0, 0, 0)
+Lighting.Brightness = 0.00001
+Lighting.FogStart = 30
+Lighting.FogColor = Color3.new(1, 1, 1)
+
+tweenservice:Create(Lighting,TweenInfo.new(5,Enum.EasingStyle.Linear),{FogEnd = 45}):Play()
+
+--Cave ambience
+local sound = Instance.new("Sound")
+
+sound.SoundId = "rbxassetid://9113732197"
+
+sound.Volume = 2
+
+sound.Looped = true
+
+sound:Play()
+
+sound.Parent = workspace
+
+---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "The abandoned hotel",
+    Desc = "Its broken",
+    Reason = "Executed Broken Mode",
+    Image = "rbxassetid://103766995741362"
+})
+
+-- Smile
+coroutine.wrap(function()
+    while true do
+        wait(70)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Smile%20remake"))()
+    end
+end)()
+
+-- Angry Munci
+coroutine.wrap(function()
+    while true do
+        wait(160)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Angry%20Munci"))()
+    end
+end)()
+
+-- Fallen Angel
+coroutine.wrap(function()
+    while true do
+        wait(280)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Fallen%20Angel"))()
+    end
+end)()
+
+-- Cursed Door
+coroutine.wrap(function()
+    while true do
+        wait(370)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Cursed%20Door"))()
+    end
+end)()
+
+-- DepthTer
+coroutine.wrap(function()
+    while true do
+        wait(190)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/DepthTer"))()
+    end
+end)()
+
+-- Fiter
+coroutine.wrap(function()
+    while true do
+        wait(480)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Fiter"))()
+    end
+end)()
