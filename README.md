@@ -1,0 +1,261 @@
+local cue2 = Instance.new("Sound")
+	cue2.Parent = game.Workspace
+	cue2.Name = "Spawn"
+	cue2.SoundId = "rbxassetid://7053083974"
+	cue2.Volume = 10
+	cue2.PlaybackSpeed = 1
+	cue2:Play()
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 255, 255)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(0, 0, 0)})
+TW:Play()
+wait(3)
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(0, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+local cue2 = Instance.new("Sound")
+	cue2.Parent = game.Workspace
+	cue2.Name = "Spawn"
+	cue2.SoundId = "rbxassetid://9125712561"
+	cue2.Volume = 10
+	cue2.PlaybackSpeed = 0.8
+	cue2:Play()
+local SmileColor = Instance.new("ColorCorrectionEffect", game.Lighting)
+game.Debris:AddItem(SmileColor, 24) 
+SmileColor.Name = "SmileWarn" 
+SmileColor.TintColor = Color3.fromRGB(0, 0, 0)
+SmileColor.Saturation = -0.7 
+SmileColor.Contrast = 0.2 
+
+-- Smooth transition back to normal
+game.TweenService:Create(SmileColor, TweenInfo.new(10), {
+    TintColor = Color3.fromRGB(255, 255, 255),
+    Saturation = 0,
+    Contrast = 0
+}):Play()
+
+-- Camera shake
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camera = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+    camera.CFrame = camera.CFrame * shakeCf
+end)
+
+camShake:Start()
+camShake:ShakeOnce(10, 3, 0.1, 6, 2, 0.5)
+local SmileColor = Instance.new("ColorCorrectionEffect", game.Lighting)
+game.Debris:AddItem(SmileColor, 24) 
+SmileColor.Name = "SmileWarn" 
+SmileColor.TintColor = Color3.fromRGB(0, 0, 0)
+SmileColor.Saturation = -0.7 
+SmileColor.Contrast = 0.2 
+
+-- Smooth transition back to normal
+game.TweenService:Create(SmileColor, TweenInfo.new(10), {
+    TintColor = Color3.fromRGB(255, 255, 255),
+    Saturation = 0,
+    Contrast = 0
+}):Play()
+
+-- Camera shake
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camera = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+    camera.CFrame = camera.CFrame * shakeCf
+end)
+
+camShake:Start()
+camShake:ShakeOnce(10, 3, 0.1, 6, 2, 0.5)
+local SmileColor = Instance.new("ColorCorrectionEffect", game.Lighting)
+game.Debris:AddItem(SmileColor, 24) 
+SmileColor.Name = "SmileWarn" 
+SmileColor.TintColor = Color3.fromRGB(0, 0, 0)
+SmileColor.Saturation = -0.7 
+SmileColor.Contrast = 0.2 
+
+-- Smooth transition back to normal
+game.TweenService:Create(SmileColor, TweenInfo.new(10), {
+    TintColor = Color3.fromRGB(255, 255, 255),
+    Saturation = 0,
+    Contrast = 0
+}):Play()
+
+-- Camera shake
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camera = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+    camera.CFrame = camera.CFrame * shakeCf
+end)
+
+camShake:Start()
+camShake:ShakeOnce(10, 3, 0.1, 6, 2, 0.5)
+local SmileColor = Instance.new("ColorCorrectionEffect", game.Lighting)
+game.Debris:AddItem(SmileColor, 24) 
+SmileColor.Name = "SmileWarn" 
+SmileColor.TintColor = Color3.fromRGB(0, 0, 0)
+SmileColor.Saturation = -0.7 
+SmileColor.Contrast = 0.2 
+
+-- Smooth transition back to normal
+game.TweenService:Create(SmileColor, TweenInfo.new(10), {
+    TintColor = Color3.fromRGB(255, 255, 255),
+    Saturation = 0,
+    Contrast = 0
+}):Play()
+
+-- Camera shake
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camera = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+    camera.CFrame = camera.CFrame * shakeCf
+end)
+
+camShake:Start()
+camShake:ShakeOnce(10, 3, 0.1, 6, 2, 0.5)
+local SmileColor = Instance.new("ColorCorrectionEffect", game.Lighting)
+game.Debris:AddItem(SmileColor, 24) 
+SmileColor.Name = "SmileWarn" 
+SmileColor.TintColor = Color3.fromRGB(0, 0, 0)
+SmileColor.Saturation = -0.7 
+SmileColor.Contrast = 0.2 
+
+-- Smooth transition back to normal
+game.TweenService:Create(SmileColor, TweenInfo.new(10), {
+    TintColor = Color3.fromRGB(255, 255, 255),
+    Saturation = 0,
+    Contrast = 0
+}):Play()
+
+-- Camera shake
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camera = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+    camera.CFrame = camera.CFrame * shakeCf
+end)
+
+camShake:Start()
+camShake:ShakeOnce(10, 3, 0.1, 6, 2, 0.5)
+local entityModel = true
+local latestRoom = game.ReplicatedStorage.GameData.LatestRoom.Value
+
+-- Check if in Seek, Figure, or rooms 90-100
+if game.Workspace:FindFirstChild("SeekMovingNewClone") or 
+   latestRoom == 50 or latestRoom == 100 or 
+   (latestRoom >= 90 and latestRoom <= 100) then
+    entityModel = false -- Prevent entity from spawning
+end
+
+if entityModel then
+-- Load entity spawner
+local Spawner = loadstring(game:HttpGet('https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/DoorEntitySpawn%2BSource'))()
+
+-- Create entity
+local entity = Spawner.createEntity({
+    CustomName = "Angry Munci",
+    Model = "rbxassetid://10866625072",
+    Speed = 300,
+    DelayTime = 22,
+    HeightOffset = 1,
+    CanKill = true,
+    NoDieOnCrouching = true,
+    NoHiding = false,
+    AntiCrucifix = false,
+    KillRange = 40,
+    OneRoom = false,
+    DieOnLook = false,
+    BreakLights = true,
+    BackwardsMovement = false,
+    MovementDeath = { false, '1' },
+    FlickerLights = { true, 20 },
+    Cycles = { Min = 12, Max = 12, WaitTime = 0.3 },
+    CamShake = { true, {3.9, 20, 1, 9}, 100 },
+    Jumpscare = {
+        true,
+        {
+            Type = "1",
+            Image1 = "rbxassetid://91939719716131",
+            Image2 = "rbxassetid://91939719716131",
+            Shake = true,
+            Sounds = {
+                "18564431123", { Volume = 5 },
+            },
+            Sound2 = {
+                "18564431123", { Volume = 5 },
+            },
+            Flashing = {
+                true,
+                Color3.fromRGB(48, 25, 52),
+            },
+            Tease = {
+                false,
+                Min = 1,
+                Max = 1,
+            },
+        },
+    },
+    Color = 'GuidingLight',
+    DiffrentMessages = true,
+    CustomDialog = {
+        {"You died to Whisper", "How to survive?", "Hide and use your skill", "So many eyes."},
+        {"Stop dying"},
+        {"Bruh", "Use what you learned from Rush!"},
+        {"Seems like Angry Munci is causing chaos...", "Hide in a closet or under a bed quickly!"},
+        {"I already told you what to do", "YOU JUST HAVE A SKILL ISSUE"}
+    }
+})
+
+-- Debug events
+entity.Debug.OnEntityMoving = function(Invincible, Hiding, plrCollisionPoint)
+    print("Invincible:", Invincible)
+    print("Player to Entity Collision:", plrCollisionPoint)
+    print("Hiding:", Hiding)
+end
+
+entity.Debug.OnEntitySpawned = function()
+    print("Entity has spawned!")
+end
+
+entity.Debug.OnEntityDespawned = function()
+    print("Entity has despawned.")
+    local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+    achievementGiver({
+        Title = "The Fastest Nextbot",
+        Desc = "You think you can get me with your speed?!",
+        Reason = "Encounter Angry Munci",
+        Image = "rbxassetid://120053033293489"
+    })
+end
+
+entity.Debug.OnEntityFinishedRebound = function()
+    print("Entity finished rebound.")
+end
+
+entity.Debug.OnEntityEnteredRoom = function(entityTable, room)
+    print("Entity entered room:", room)
+end
+
+entity.Debug.OnLookAtEntity = function()
+    print("Player looked at the entity.")
+end
+
+entity.Debug.OnDeath = function()
+    warn("Player has died.")
+    firesignal(game.ReplicatedStorage.RemotesFolder.DeathHint.OnClientEvent, {
+        "You died to who called.", 
+        "Angry Munci...", 
+        "Hide when this happens!"
+    }, "Blue")
+end
+
+-- Run the entity only if spawning is allowed
+    Spawner.runEntity(entity)
+else
+    warn("Entity spawn prevented due to Seek, Figure, or Rooms 90+.")
+end
