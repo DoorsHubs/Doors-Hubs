@@ -56,7 +56,7 @@ end)()
 -- blink
 coroutine.wrap(function()
     while true do
-        wait(10)
+        wait(60)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
         
