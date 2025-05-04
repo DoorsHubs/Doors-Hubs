@@ -1,6 +1,6 @@
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(150, 5, 5)
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Impossible Mode Remake Actived!",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Impossible Mode Recoded Actived!",true)
 wait(2)
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(150, 5, 5)
@@ -8,7 +8,7 @@ require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("
 wait(2)
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(150, 5, 5)
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Remake made by Guestly",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Recoded made by Guestly",true)
 
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
@@ -114,6 +114,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/
     end
 end)()
 
+-- A-60
 coroutine.wrap(function()
     while true do
         wait(550)
