@@ -107,7 +107,6 @@ local entity = spawner.Create({
 
 entity:SetCallback("OnSpawned", function()
     print("Entity has spawned")
-
 end)
 
 entity:SetCallback("OnStartMoving", function()
@@ -176,7 +175,7 @@ coroutine.wrap(function()
     while true do
         wait(50)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(5)
+        wait(0)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
 ---====== Create entity ======---
@@ -322,7 +321,7 @@ coroutine.wrap(function()
     while true do
         wait(150)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(5)
+        wait(0)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
 ---====== Create entity ======---
@@ -631,7 +630,7 @@ coroutine.wrap(function()
     while true do
         wait(250)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(5)
+        wait(0)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
 ---====== Create entity ======---
@@ -798,7 +797,7 @@ coroutine.wrap(function()
     while true do
         wait(380)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(5)
+        wait(0)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
 ---====== Create entity ======---
@@ -961,7 +960,7 @@ coroutine.wrap(function()
     while true do
         wait(600)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(5)
+        wait(0)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
 ---====== Create entity ======---
@@ -1128,7 +1127,7 @@ coroutine.wrap(function()
     while true do
         wait(800)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(5)
+        wait(0)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
 ---====== Create entity ======---
@@ -1291,7 +1290,7 @@ coroutine.wrap(function()
     while true do
         wait(300)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(5)
+        wait(0)
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
 ---====== Create entity ======---
