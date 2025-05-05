@@ -19,7 +19,7 @@ local cue = Instance.new("Sound")
 	cue.Volume = 5
 	cue.PlaybackSpeed = 0.8
 	cue:Play()
-wait(5)
+wait(8)
 local SmileColor = Instance.new("ColorCorrectionEffect", game.Lighting)
 game.Debris:AddItem(SmileColor, 24) 
 SmileColor.Name = "SmileWarn" 
@@ -67,7 +67,7 @@ local entity = Spawner.createEntity({
     Cycles = {
         Min = 10,
         Max = 10,
-        Delay = 3
+        Delay = 0
     },
     CamShake = {
         Enabled = true,
