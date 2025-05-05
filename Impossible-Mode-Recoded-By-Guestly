@@ -140,3 +140,23 @@ coroutine.wrap(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/A-200%20spawner"))()
     end
 end)()
+
+-- Silence
+coroutine.wrap(function()
+    while true do
+        wait(280)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Silenceje"))()
+    end
+end)()
+
+-- Hunger
+coroutine.wrap(function()
+    while true do
+        wait(440)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Hunger%20remake"))()
+    end
+end)()
