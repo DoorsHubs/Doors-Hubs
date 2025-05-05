@@ -46,7 +46,7 @@ intro:Destroy()
 -- Smiler
 coroutine.wrap(function()
     while true do
-        wait(200)
+        wait(150)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Smiler%20spawner"))()
@@ -56,7 +56,7 @@ end)()
 -- blink
 coroutine.wrap(function()
     while true do
-        wait(60)
+        wait(35)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
         
@@ -107,7 +107,7 @@ end)()
 -- Dread
 coroutine.wrap(function()
     while true do
-        wait(160)
+        wait(200)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Dread%20spawner"))()
@@ -117,7 +117,7 @@ end)()
 -- A-60
 coroutine.wrap(function()
     while true do
-        wait(550)
+        wait(380)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(120, 1, 1)
@@ -134,7 +134,7 @@ end)()
 -- A-200
 coroutine.wrap(function()
     while true do
-        wait(790)
+        wait(490)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/A-200%20spawner"))()
@@ -160,3 +160,5 @@ coroutine.wrap(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Hunger%20remake"))()
     end
 end)()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Como%20ses"))()
