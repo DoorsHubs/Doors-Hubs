@@ -75,6 +75,16 @@ entity.Debug.OnEntitySpawned = function(entityTable)
 end
  
 entity.Debug.OnEntityDespawned = function(entityTable)
+    ---====== Load achievement giver ======---
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "The Scribble Guy",
+    Desc = "Is bro drawing my face?",
+    Reason = "Encounter A-200",
+    Image = "rbxassetid://99587013015062"
+})
 end
  
 entity.Debug.OnEntityStartMoving = function(entityTable)
