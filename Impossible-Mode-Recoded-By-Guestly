@@ -191,6 +191,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/
     end
 end)()
 
+-- Awaken Silence
+coroutine.wrap(function()
+    while true do
+        wait(1400)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Awaken%20Silence"))()
+    end
+end)()
+
 -- Common Sense
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Como%20ses"))()
 
