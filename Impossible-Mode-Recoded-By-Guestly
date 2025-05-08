@@ -46,7 +46,7 @@ intro:Destroy()
 -- Smiler
 coroutine.wrap(function()
     while true do
-        wait(150)
+        wait(180)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Smiler%20spawner"))()
@@ -56,7 +56,7 @@ end)()
 -- blink
 coroutine.wrap(function()
     while true do
-        wait(35)
+        wait(50)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
         
@@ -107,7 +107,7 @@ end)()
 -- Dread
 coroutine.wrap(function()
     while true do
-        wait(200)
+        wait(257)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Dread%20spawner"))()
@@ -198,6 +198,14 @@ coroutine.wrap(function()
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Awaken%20Silence"))()
+    end
+end)()
+
+-Stunner
+coroutine.wrap(function()
+    while true do
+        wait(35)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Stunner"))()
     end
 end)()
 
