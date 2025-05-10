@@ -53,6 +53,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/
     end
 end)()
 
+-- Wh1t3
+coroutine.wrap(function()
+    while true do
+        wait(310)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/White"))()
+    end
+end)()
+
 -- blink
 coroutine.wrap(function()
     while true do
