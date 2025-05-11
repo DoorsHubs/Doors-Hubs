@@ -1,0 +1,99 @@
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(36, 255, 3)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+wait(5)
+---====== Define spawner ======---
+
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V1/Source.lua"))()
+
+---====== Create entity ======---
+
+local entity = Spawner.createEntity({
+    CustomName = "A-35",
+    Model = "rbxassetid://120217347095891", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
+    Speed = 220,
+    MoveDelay = 1,
+    HeightOffset = 0,
+    CanKill = true,
+    KillRange = 40,
+    SpawnInFront = false,
+    ShatterLights = true,
+    FlickerLights = {
+        Enabled = false,
+        Duration = 2
+    },
+    Cycles = {
+        Min = 2,
+        Max = 2,
+        Delay = 5
+    },
+    CamShake = {
+        Enabled = true,
+        Values = {1.5, 20, 0.1, 1},
+        Range = 300
+    },
+    ResistCrucifix = false,
+    BreakCrucifix = true,
+    DeathMessage = {"You died to who called A-35", "Hide when he spawns."},
+    IsCuriousLight = true
+})
+
+---====== Debug ======---
+
+entity.Debug.OnEntitySpawned = function()
+    print("Entity has spawned")
+local cue2 = Instance.new("Sound")
+	cue2.Parent = game.Workspace
+	cue2.Name = "Spawn"
+	cue2.SoundId = "rbxassetid://7053083974"
+	cue2.Volume = 1
+	cue2.PlaybackSpeed = 1
+	cue2:Play()
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(36, 255, 3)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+end
+
+entity.Debug.OnEntityDespawned = function()
+    print("Entity has despawned")
+end
+
+entity.Debug.OnEntityStartMoving = function()
+    print("Entity started moving")
+end
+
+entity.Debug.OnEntityFinishedRebound = function()
+    print("Entity finished rebound")
+end
+
+entity.Debug.OnEntityEnteredRoom = function(room)
+    print("Entity entered room:", room)
+end
+
+entity.Debug.OnLookAtEntity = function()
+    print("Player looking at entity")
+end
+
+entity.Debug.OnDeath = function()
+    print("Player has died")
+end
+
+--[[
+    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
+
+    entity.Debug.OnUseCrucifix = function()
+        print("Custom crucifixion script here")
+    end
+]]--
+
+---====== Run entity ======---
+
+Spawner.runEntity(entity)
