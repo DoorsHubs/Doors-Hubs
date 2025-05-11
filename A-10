@@ -11,11 +11,11 @@ local entity = Spawner.createEntity({
     MoveDelay = 2,
     HeightOffset = 0,
     CanKill = true,
-    KillRange = 60,
+    KillRange = 40,
     SpawnInFront = false,
     ShatterLights = false,
     FlickerLights = {
-        Enabled = true,
+        Enabled = false,
         Duration = 2
     },
     Cycles = {
@@ -31,7 +31,7 @@ local entity = Spawner.createEntity({
     ResistCrucifix = false,
     BreakCrucifix = true,
     DeathMessage = {"Custom", "death", "message", "goes", "here."},
-    IsCuriousLight = false
+    IsCuriousLight = true
 })
 
 ---====== Debug ======---
@@ -42,16 +42,6 @@ end
 
 entity.Debug.OnEntityDespawned = function()
     print("Entity has despawned")
----====== Load achievement giver ======---
-local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
-
----====== Display achievement ======---
-achievementGiver({
-    Title = "Smile and smile",
-    Desc = "Be happy forever",
-    Reason = "Encounter A-10",
-    Image = "rbxassetid://115937397925856"
-})
 end
 
 entity.Debug.OnEntityStartMoving = function()
