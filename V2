@@ -48,11 +48,9 @@ function spawncruxy(posy)
         RA.RightShoulder.C1 = RC1 * CFrame.Angles(math.rad(-90), math.rad(-15), 0)
         LA.LeftShoulder.C1 = LC1 * CFrame.new(-0.2, -0.3, -0.5) * CFrame.Angles(math.rad(-125), math.rad(25), math.rad(25))
 
-        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("You found a crucifix!", true)
+        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("You found the crucifix!", true)
         wait(3)
-        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("It can help you with some custom entities", true)
-        wait(3)
-        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("Good Lucks!", true)                      
+        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("Maybe it can help you with some custom entities", true)
     end)
 
     spawnedRooms[currentRoom] = true
