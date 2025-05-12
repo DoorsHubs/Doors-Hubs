@@ -11,7 +11,7 @@ caption.TextColor3 = Color3.fromRGB(150, 5, 5)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Recoded made by Guestly",true)
 
 -- Custom Crucifix
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Custom%20crucifix"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/V2"))()
 
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
