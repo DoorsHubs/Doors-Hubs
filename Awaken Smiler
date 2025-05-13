@@ -19,6 +19,13 @@ local cue = Instance.new("Sound")
 local cue = Instance.new("Sound")
 	cue.Parent = game.Workspace
 	cue.Name = "Spawn"
+	cue.SoundId = "rbxassetid://6933037531"
+	cue.Volume = 5
+	cue.PlaybackSpeed = 0.9
+	cue:Play()
+local cue = Instance.new("Sound")
+	cue.Parent = game.Workspace
+	cue.Name = "Spawn"
 	cue.SoundId = "rbxassetid://97847167833186"
 	cue.Volume = 10
 	cue.PlaybackSpeed = 0.8
@@ -130,6 +137,64 @@ end
 
 entity.Debug.OnDeath = function()
     print("Player has died")
+local shadow = game:GetObjects("rbxassetid://11503625408")[1]
+		local gui = Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui)
+        local cue = Instance.new("Sound")
+	cue.Parent = game.Workspace
+	cue.Name = "Spawn"
+	cue.SoundId = "rbxassetid://8325519723"
+	cue.Volume = 3
+	cue.PlaybackSpeed = 0.9
+	cue:Play()
+			shadow.Parent = gui
+			shadow.Visible = true
+			local l__ImageLabel__1 = shadow.ImageLabel;
+			local v2 = Random.new();
+			local l__SizeValue__3 = shadow.SizeValue;
+			local v4 = math.random(1, 6);
+			if v4 == 1 then
+				l__ImageLabel__1.Image = "rbxassetid://115413141829989";
+			end;
+			if v4 == 2 then
+				l__ImageLabel__1.Image = "rbxassetid://137834279106026";
+			end;
+			if v4 == 3 then
+				l__ImageLabel__1.Image = "rbxassetid://115413141829989";
+			end;
+			if v4 == 4 then
+				l__ImageLabel__1.Image = "rbxassetid://137834279106026";
+			end;
+			if v4 == 5 then
+				l__ImageLabel__1.Image = "rbxassetid://115413141829989";
+			end;
+			if v4 == 6 then
+				l__ImageLabel__1.Image = "rbxassetid://137834279106026";
+			end;
+			shadow.Jumpscare:Play();
+			for v5 = 1, 25 do
+				local v6 = math.random(1, 3);
+				if v6 == 1 then
+					shadow.BackgroundColor3 = Color3.new(24, 3, 255);
+					l__ImageLabel__1.ImageColor3 = Color3.new(1, 1, 1);
+				end;
+				if v6 == 2 then
+					shadow.BackgroundColor3 = Color3.new(24, 3, 255);
+					l__ImageLabel__1.ImageColor3 = Color3.new(0, 0, 0);
+				end;
+				if v6 == 3 then
+					shadow.BackgroundColor3 = Color3.new(24, 3, 255);
+					l__ImageLabel__1.ImageColor3 = Color3.new(1, 0, 0);
+				end;
+				l__ImageLabel__1.Position = UDim2.new(v2:NextNumber(0.4, 0.6), 0, v2:NextNumber(0.45, 0.55), 0);
+				l__ImageLabel__1.Size = l__ImageLabel__1.Size + UDim2.new(l__SizeValue__3.Value, 0, l__SizeValue__3.Value, 0);
+				l__ImageLabel__1.Rotation = math.random(-10, 10);
+				l__SizeValue__3.Value = l__SizeValue__3.Value - 0.01;
+				wait(0);
+			end;
+			l__ImageLabel__1.ImageColor3 = Color3.new(1, 1, 1);
+			shadow.BackgroundColor3 = Color3.new(0, 0, 0);
+			shadow.Visible = false;
+			shadow.Jumpscare:Stop()
 end
 
 --[[
