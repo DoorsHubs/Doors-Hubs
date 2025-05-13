@@ -46,6 +46,9 @@ intro.Visible = false
 wait(9)
 intro:Destroy()
 
+-- Nightmare Rush and Ambush
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Voorproo/Rush-mod/refs/heads/main/Script"))()
+
 -- Smiler
 coroutine.wrap(function()
     while true do
