@@ -47,7 +47,7 @@ wait(9)
 intro:Destroy()
 
 -- Nightmare Rush and Ambush
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Voorproo/Rush-mod/refs/heads/main/Script"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Nightmare"))()
 
 -- Smiler
 coroutine.wrap(function()
