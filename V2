@@ -4,6 +4,26 @@ function spawncruxy(posy)
     local currentRoom = game.ReplicatedStorage.GameData.LatestRoom.Value
     if spawnedRooms[currentRoom] then return end
 
+local cue = Instance.new("Sound")
+	cue.Parent = game.Workspace
+	cue.Name = "Spawn"
+	cue.SoundId = "rbxassetid://103086632976213"
+	cue.Volume = 0.7
+	cue.PlaybackSpeed = 0.9
+	cue:Play()
+
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(0, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(3, 238, 255)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Guiding Light: Find the crucifix",true)
+
     local crucifixTool = game:GetObjects("rbxassetid://11631916882")[1]
     crucifixTool.Parent = game.Workspace
     crucifixTool.Name = "Cruxy"
@@ -98,7 +118,7 @@ game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
 
     for _, v in next, game.Workspace.CurrentRooms[lastroom].Assets:GetDescendants() do
         if v.Name == "Table" and v:FindFirstChild("Main") then
-            local randomy = math.random(1, 36)
+            local randomy = math.random(1, 46)
             if randomy == 1 then
                 local positio = v.Main.Position + Vector3.new(0, 1.8, 0)
                 spawncruxy(positio)
