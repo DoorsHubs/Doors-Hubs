@@ -1,5 +1,9 @@
-math.random(1, 2)
-if math.random(1, 2) == 2 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()
+math.random(1, 2, 3, 4)
+if math.random(1, 2, 3, 4) == 2 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bre29be3/J/refs/heads/main/Key%20Tracker"))()
+elseif math.random(1, 2, 3, 4) == 3 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+elseif math.random(1, 2, 3, 4) == 4 then
+loadstring(game:HttpGet('https://gist.githubusercontent.com/IdkMyNameLoll/04d7dd5e02688624b958b8c2604b924c/raw/9e86b34249f44ed2dd433176e67daaf3db30cde8/MoonBottle'))()
 end
 end)
