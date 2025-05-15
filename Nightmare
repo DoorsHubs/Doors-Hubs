@@ -6,11 +6,11 @@ game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
 
     wait(1)
 
-game.Workspace.RushMoving.RushNew.Attachment.ParticleEmitter.Texture = "rbxassetid://130013988225225"
+game.Workspace.RushMoving.RushNew.Attachment.ParticleEmitter.Texture = "rbxassetid://123719757402904"
 
-game.Players.LocalPlayer.PlayerGui.MainUI.Jumpscare.Jumpscare_Rush.ImageLabel.Image = "rbxassetid://130013988225225"
+game.Players.LocalPlayer.PlayerGui.MainUI.Jumpscare.Jumpscare_Rush.ImageLabel.Image = "rbxassetid://123719757402904"
 
-game.Players.LocalPlayer.PlayerGui.MainUI.Jumpscare.Jumpscare_Rush.ImageLabelBig.Image = "rbxassetid://130013988225225"
+game.Players.LocalPlayer.PlayerGui.MainUI.Jumpscare.Jumpscare_Rush.ImageLabelBig.Image = "rbxassetid://123719757402904"
 
 game.Players.LocalPlayer.PlayerGui.MainUI.Jumpscare.Jumpscare_Rush.TextLabel.Visible = true
 
@@ -58,9 +58,9 @@ game.Workspace.AmbushMoving.RushNew.Attachment.ParticleEmitter.Color = ColorSequ
 
         --
 
-        game.Workspace.RushMoving.RushNew.PlaySound.PlaybackSpeed = 0.05
+        game.Workspace.RushMoving.RushNew.PlaySound.PlaybackSpeed = 0.01
 
-        game.Workspace.RushMoving.RushNew.PlaySound.Footsteps = 0.1
+        game.Workspace.RushMoving.RushNew.PlaySound.Footsteps = 0.01
 
     end
 
