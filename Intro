@@ -4,7 +4,7 @@ local cue = Instance.new("Sound")
 	cue.Name = "Spawn"
 	cue.SoundId = "rbxassetid://6729922069"
 	cue.Volume = 1
-	cue.PlaybackSpeed = 1.3
+	cue.PlaybackSpeed = 1
 	cue:Play()
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(0, 0, 0)
 game.Lighting.MainColorCorrection.Contrast = 10
