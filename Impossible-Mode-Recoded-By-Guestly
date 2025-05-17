@@ -15,7 +15,7 @@ local sound = Instance.new("Sound")
 
 sound.SoundId = "rbxassetid://133116870"
 
-sound.Volume = 0.7
+sound.Volume = 0.3
 
 sound.Looped = true
 
