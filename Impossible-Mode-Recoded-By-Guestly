@@ -40,6 +40,10 @@ workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Do
     end
 end)()
 
+-- Sprint Bar
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Hardcore%20Sprint%20System%20(PC%20and%20Mobile%20Adaptation).lua.txt"))()
+
+-- Fear Bar
 local tweenservice = game:GetService("TweenService")
 
 local gui = Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui)
@@ -76,7 +80,7 @@ grad.Color = red
 local num = Instance.new("NumberValue",frame)
 num.Value = 50
 num.Changed:Connect(function()
-	local anim = tweenservice:Create(bar,TweenInfo.new(5,Enum.EasingStyle.Linear),{Size = UDim2.new(0,num.Value,0,10)})
+	local anim = tweenservice:Create(bar,TweenInfo.new(5,Enum.EasingStyle.Linear),{Size = UDim2.new(0,num.Value,0,15)})
 	anim:Play()
 end)
 
@@ -115,7 +119,7 @@ end)()
 -- Wh1t3
 coroutine.wrap(function()
     while true do
-        wait(310)
+        wait(560)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/White"))()
@@ -151,6 +155,20 @@ local cue2 = Instance.new("Sound")
 	cue2.PlaybackSpeed = 2
 	cue2:Play()
 loadstring(game:HttpGet("https://github.com/PABMAXICHAC/doors-monsters-scripts/raw/main/blinkcrux"))()
+local cue = Instance.new("Sound")
+	cue.Parent = game.Workspace
+	cue.Name = "Spawn"
+	cue.SoundId = "rbxassetid://175024455"
+	cue.Volume = 1
+	cue.PlaybackSpeed = 1.2
+	cue:Play()
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(250, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(219, 88, 88)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fear: +5%",true)
@@ -181,7 +199,7 @@ end)()
 -- Dread
 coroutine.wrap(function()
     while true do
-        wait(257)
+        wait(350)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Dread%20spawner"))()
@@ -206,6 +224,20 @@ game.Lighting.MainColorCorrection.Contrast = 10
 local tween = game:GetService("TweenService")
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/a-60aa/refs/heads/main/---%3D%3D%3D%3D%3D%3D%20a-60%20agresiv%20spawner%20%3D%3D%3D%3D%3D%3D---.txt"))()
+local cue = Instance.new("Sound")
+	cue.Parent = game.Workspace
+	cue.Name = "Spawn"
+	cue.SoundId = "rbxassetid://175024455"
+	cue.Volume = 1
+	cue.PlaybackSpeed = 1.2
+	cue:Play()
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(250, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(219, 88, 88)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fear: +20%",true)
@@ -235,6 +267,20 @@ coroutine.wrap(function()
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Silenceje"))()
+local cue = Instance.new("Sound")
+	cue.Parent = game.Workspace
+	cue.Name = "Spawn"
+	cue.SoundId = "rbxassetid://175024455"
+	cue.Volume = 1
+	cue.PlaybackSpeed = 1.2
+	cue:Play()
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(250, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(219, 88, 88)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fear: +10%",true)
@@ -250,6 +296,20 @@ coroutine.wrap(function()
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Hunger%20remake"))()
+local cue = Instance.new("Sound")
+	cue.Parent = game.Workspace
+	cue.Name = "Spawn"
+	cue.SoundId = "rbxassetid://175024455"
+	cue.Volume = 1
+	cue.PlaybackSpeed = 1.2
+	cue:Play()
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(250, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(219, 88, 88)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fear: +10%",true)
@@ -263,6 +323,20 @@ coroutine.wrap(function()
     while true do
         wait(180)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Dimensional%20Eye"))()
+local cue = Instance.new("Sound")
+	cue.Parent = game.Workspace
+	cue.Name = "Spawn"
+	cue.SoundId = "rbxassetid://175024455"
+	cue.Volume = 1
+	cue.PlaybackSpeed = 1.2
+	cue:Play()
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(250, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(219, 88, 88)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fear: +5%",true)
@@ -298,6 +372,20 @@ coroutine.wrap(function()
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Awaken%20Silence"))()
+local cue = Instance.new("Sound")
+	cue.Parent = game.Workspace
+	cue.Name = "Spawn"
+	cue.SoundId = "rbxassetid://175024455"
+	cue.Volume = 1
+	cue.PlaybackSpeed = 1.2
+	cue:Play()
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(250, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(219, 88, 88)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fear: +30%",true)
@@ -331,6 +419,20 @@ coroutine.wrap(function()
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Awaken%20Hunger"))()
+local cue = Instance.new("Sound")
+	cue.Parent = game.Workspace
+	cue.Name = "Spawn"
+	cue.SoundId = "rbxassetid://175024455"
+	cue.Volume = 1
+	cue.PlaybackSpeed = 1.2
+	cue:Play()
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(250, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(219, 88, 88)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fear: +30%",true)
