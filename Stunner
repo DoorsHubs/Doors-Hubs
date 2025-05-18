@@ -75,7 +75,10 @@ oogaBoogaaPart.CanCollide = false
 oogaBoogaaPart.Anchored = false
 wait(1)
     shockerModel:Destroy()
-task.wait(1)
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(219, 88, 88)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fear: +3%",true)
+task.wait(0)
 _G.stats.Value += 3
 
 ---====== Load achievement giver ======---
