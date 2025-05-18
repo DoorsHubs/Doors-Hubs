@@ -76,6 +76,8 @@ tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 
 local TweenService = game:GetService("TweenService")
 local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(50),{TintColor = Color3.fromRGB(255, 255, 255)})
 TW:Play()
+task.wait(5)
+_G.stats.Value += 15
 end
 
 entity.Debug.OnEntityDespawned = function()
