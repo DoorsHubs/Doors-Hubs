@@ -88,7 +88,7 @@ local cue = Instance.new("Sound")
 	cue.Volume = 1
 	cue.PlaybackSpeed = 1.2
 	cue:Play()
-game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(250, 0, 0)
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 107, 8)
 game.Lighting.MainColorCorrection.Contrast = 10
 local tween = game:GetService("TweenService")
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
@@ -96,8 +96,8 @@ local TweenService = game:GetService("TweenService")
 local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
 TW:Play()
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
-caption.TextColor3 = Color3.fromRGB(219, 88, 88)
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Fear: +20%",true)
+caption.TextColor3 = Color3.fromRGB(255, 107, 8)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Pain: +20%",true)
 task.wait(0)
 _G.stats.Value += 20
 end
