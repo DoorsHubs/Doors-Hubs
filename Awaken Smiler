@@ -95,6 +95,8 @@ local entity = Spawner.createEntity({
 
 entity.Debug.OnEntitySpawned = function()
     print("Entity has spawned")
+task.wait(5)
+_G.stats.Value += 40
 end
 
 entity.Debug.OnEntityDespawned = function()
