@@ -40,6 +40,49 @@ workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Do
     end
 end)()
 
+local tweenservice = game:GetService("TweenService")
+
+local gui = Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui)
+local frame = Instance.new("Frame",gui)
+frame.BorderSizePixel = 0
+frame.BackgroundTransparency = 0.7
+frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+frame.Position = UDim2.new(0.637, 0,0.88, 0)
+frame.Size = UDim2.new(0, 310,0, 25)
+frame.BackgroundColor3 = Color3.fromRGB(6,32,3)
+local corner = Instance.new("UICorner",frame)
+corner.CornerRadius = UDim.new(0.25,0)
+local stroke = Instance.new("UIStroke",frame)
+stroke.Color = Color3.fromRGB(255, 255, 255)
+stroke.Thickness = 4
+local gradient = Instance.new("UIGradient",stroke)
+local red = ColorSequence.new{
+	ColorSequenceKeypoint.new(0,Color3.fromRGB(166,51,51)),
+	ColorSequenceKeypoint.new(1,Color3.fromRGB(255,101,101))
+}
+gradient.Color = red
+gradient.Rotation = -90
+local bar = Instance.new("Frame",frame)
+bar.Position = UDim2.new(0.016, 0,0.19, 0)
+bar.Size = UDim2.new(0, 50,0, 15)
+bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bar.BorderSizePixel = 0
+local corner1 = corner:Clone()
+corner1.Parent = bar
+local grad = gradient:Clone()
+grad.Parent = bar
+grad.Color = red
+
+local num = Instance.new("NumberValue",frame)
+num.Value = 50
+num.Changed:Connect(function()
+	local anim = tweenservice:Create(bar,TweenInfo.new(5,Enum.EasingStyle.Linear),{Size = UDim2.new(0,num.Value,0,10)})
+	anim:Play()
+end)
+
+_G.stats = num
+_G.baseval = -2
+
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
@@ -108,7 +151,9 @@ local cue2 = Instance.new("Sound")
 	cue2.PlaybackSpeed = 2
 	cue2:Play()
 loadstring(game:HttpGet("https://github.com/PABMAXICHAC/doors-monsters-scripts/raw/main/blinkcrux"))()
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+task.wait(1)
+_G.stats.Value += 5
+wait(10)
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(209, 3, 255)
 game.Lighting.MainColorCorrection.Contrast = 10
 local tween = game:GetService("TweenService")
@@ -158,6 +203,8 @@ game.Lighting.MainColorCorrection.Contrast = 10
 local tween = game:GetService("TweenService")
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Idk-lol2/a-60aa/refs/heads/main/---%3D%3D%3D%3D%3D%3D%20a-60%20agresiv%20spawner%20%3D%3D%3D%3D%3D%3D---.txt"))()
+task.wait(1)
+_G.stats.Value += 20
 game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 local TweenService = game:GetService("TweenService")
 local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
@@ -182,6 +229,8 @@ coroutine.wrap(function()
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Silenceje"))()
+task.wait(1)
+_G.stats.Value += 10
     end
 end)()
 
@@ -192,6 +241,8 @@ coroutine.wrap(function()
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Hunger%20remake"))()
+task.wait(1)
+_G.stats.Value += 10
     end
 end)()
 
@@ -200,6 +251,8 @@ coroutine.wrap(function()
     while true do
         wait(180)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Dimensional%20Eye"))()
+task.wait(1)
+_G.stats.Value += 5
     end
 end)()
 
@@ -230,6 +283,8 @@ coroutine.wrap(function()
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Awaken%20Silence"))()
+task.wait(1)
+_G.stats.Value += 30
     end
 end)()
 
@@ -238,6 +293,8 @@ coroutine.wrap(function()
     while true do
         wait(35)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Stunner"))()
+task.wait(1)
+_G.stats.Value += 3
     end
 end)()
 
@@ -258,6 +315,8 @@ coroutine.wrap(function()
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DoorsHubs/Doors-Hubs/refs/heads/main/Awaken%20Hunger"))()
+task.wait(1)
+_G.stats.Value += 30
     end
 end)()
 
