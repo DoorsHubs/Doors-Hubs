@@ -75,6 +75,9 @@ oogaBoogaaPart.CanCollide = false
 oogaBoogaaPart.Anchored = false
 wait(1)
     shockerModel:Destroy()
+task.wait(1)
+_G.stats.Value += 3
+
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
