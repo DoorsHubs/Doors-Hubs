@@ -486,7 +486,7 @@ local entity = Spawner.createEntity({
         Values = {1.5, 20, 0.1, 1},
         Range = 1000000000000
     },
-    ResistCrucifix = false,
+    ResistCrucifix = true,
     BreakCrucifix = true,
     DeathMessage = {"You died to who called Smiler", "That one is very fast", "Try hide from it at any costs", "You can do it!", "Try better next times!"},
     IsCuriousLight = true
