@@ -128,7 +128,7 @@ local entity = Spawner.createEntity({
 entity.Debug.OnEntitySpawned = function()
     print("Entity has spawned")
     game.ReplicatedStorage.GameData.StopTime.Value = true
-task.wait(5)
+task.wait(1)
 _G.stats.Value += 5
 end
 
