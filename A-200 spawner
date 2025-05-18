@@ -72,6 +72,8 @@ local entity = Creator.createEntity({
 -----[[ Advanced ]]-----
 entity.Debug.OnEntitySpawned = function(entityTable)
     print("Entity has spawned:", entityTable.Model)
+task.wait(5)
+_G.stats.Value += 15
 end
  
 entity.Debug.OnEntityDespawned = function(entityTable)
