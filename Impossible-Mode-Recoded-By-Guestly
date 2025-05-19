@@ -77,7 +77,7 @@ local scriptURLs = {
 num.Changed:Connect(function()
     local anim = tweenservice:Create(bar,TweenInfo.new(5,Enum.EasingStyle.Linear),{Size = UDim2.new(0,num.Value,0,15)})
     anim:Play()
-if num.Value >= 300 then
+if num.Value >= 200 then
 num.Value = 0 
 local index = math.random(1, #scriptURLs)
         local url = scriptURLs[index]
@@ -184,7 +184,7 @@ local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFr
 caption.TextColor3 = Color3.fromRGB(255, 107, 8)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Pain: +5%",true)
 task.wait(0)
-_G.stats.Value = 0
+_G.stats.Value += 5
 wait(10)
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(209, 3, 255)
 game.Lighting.MainColorCorrection.Contrast = 10
