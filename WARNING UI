@@ -10,7 +10,7 @@ local cue = Instance.new("Sound")
 	cue.Name = "Spawn"
 	cue.SoundId = "rbxassetid://6933037531"
 	cue.Volume = 5
-	cue.PlaybackSpeed = 3
+	cue.PlaybackSpeed = 2.3
 	cue:Play()
 
 local Players = game:GetService("Players")
