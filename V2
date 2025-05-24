@@ -4,13 +4,7 @@ function spawncruxy(posy)
     local currentRoom = game.ReplicatedStorage.GameData.LatestRoom.Value
     if spawnedRooms[currentRoom] then return end
 
-local cue = Instance.new("Sound")
-	cue.Parent = game.Workspace
-	cue.Name = "Spawn"
-	cue.SoundId = "rbxassetid://103086632976213"
-	cue.Volume = 0.7
-	cue.PlaybackSpeed = 0.9
-	cue:Play()
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.Health.Music.Blue:Play()
 
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(0, 0, 0)
 game.Lighting.MainColorCorrection.Contrast = 10
