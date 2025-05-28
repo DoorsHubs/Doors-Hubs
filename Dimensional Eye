@@ -27,6 +27,7 @@ task.spawn(function()
                 game.Players.LocalPlayer.Character.Humanoid:TakeDamage(0.1)
         end
     if game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
+        firesignal(game.ReplicatedStorage.RemotesFolder.DeathHint.OnClientEvent, {"You died to who you call Dimensionnal Eye...","He spawns in center of room and he will damage you if you look at him","He doesnt like to be stared at!"},"Blue")
                 game.ReplicatedStorage.GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Dimensional Eye"
     end
    end
