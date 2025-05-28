@@ -124,6 +124,7 @@ end
  
 entity.Debug.OnDeath = function(entityTable)
     warn("Player has died.")
+firesignal(game.ReplicatedStorage.RemotesFolder.DeathHint.OnClientEvent, {"You died to who you call A-200...","I had not see that entity before..","I think just hide from it!"},"Blue")
 
 local func, setupval, getinfo, typeof, getgc, next = nil, debug.setupvalue or setupvalue, debug.getinfo or getinfo, typeof, getgc, next
 
