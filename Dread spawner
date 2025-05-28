@@ -193,6 +193,8 @@ end
 
 entity.Debug.OnDeath = function()
     print("Player has died")
+firesignal(game.ReplicatedStorage.RemotesFolder.DeathHint.OnClientEvent, {"You died to who you call Dread...","Its an unrelated entity in this mode","But it might kill you easily.."},"Blue")
+
 local shadow = game:GetObjects("rbxassetid://11503625408")[1]
 		local gui = Instance.new("ScreenGui",game.Players.LocalPlayer.PlayerGui)
         local cue = Instance.new("Sound")
