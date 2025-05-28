@@ -42,7 +42,8 @@ local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFr
 caption.TextColor3 = Color3.fromRGB(255, 255, 255)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("C̷̯̪̿R̸̝̽̈Ő̸͔̼̈͊U̷̩̣̎̍͌C̴̪̘͈͙͌́H̴̠̦̦̺̑ ̵͕̈́̿̕C̴͉͘Ȓ̸͚̖̆͝Õ̷͎̲̆͗U̷̗͗͂̿C̸̢̝̈̈Ȟ̵̜͍͉̚ ̶͍͛̈́C̴͙̓̅̀͠Ȑ̵̦́̋͠Ọ̸̤̌Ủ̵͈C̶̠̥̰͐͑H̶̩͉͔͕̒̏",true)
 game.Players.LocalPlayer.Character.Humanoid.Health -= 3
-game:GetService("ReplicatedStorage").GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Silence"
+firesignal(game.ReplicatedStorage.RemotesFolder.DeathHint.OnClientEvent, {"You died to who you call Silence...","He spawns in center of room and he will damage you if you dont crouch","I believe in you!"},"Blue")
+        	game.ReplicatedStorage.GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Silence"
 end
 if ultimaroom ~= game.ReplicatedStorage.GameData.LatestRoom.Value then 
 s:Destroy()
