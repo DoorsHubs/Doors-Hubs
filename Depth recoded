@@ -142,6 +142,7 @@ end
 
 entity.Debug.OnDeath = function()
     print("Player has died")
+firesignal(game.ReplicatedStorage.RemotesFolder.DeathHint.OnClientEvent, {"You died to who you call Depth...","Another unrelated entity..","Just hide from him when he appears"},"Blue")
 end
 
 --[[
