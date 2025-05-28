@@ -93,8 +93,7 @@ task.spawn(function()
         -- If the player dies, update the death cause and show the death hint
         if game.Players.LocalPlayer.Character.Humanoid.Health <= 0 then
             -- Show death hint
-            firesignal(game.ReplicatedStorage.RemotesFolder.DeathHint.OnClientEvent, 
-                {"You died to who you call Creepy Smiler...", "It will freeze your health if you don't watch out.", "Look at it or suffer!"}, "Blue")
+            firesignal(game.ReplicatedStorage.RemotesFolder.DeathHint.OnClientEvent, {"You died to who you call Hunger...","He spawns in center of room and he will damage you if you dont look at him","He doesnt like to be ignoring"},"Blue")
             wait(0.01)
             -- Update the death cause in the game stats
             game:GetService("ReplicatedStorage").GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Hunger"
