@@ -16,13 +16,25 @@ local cue = Instance.new("Sound")
 	cue.Volume = 10
 	cue.PlaybackSpeed = 0.8
 	cue:Play()
-local cue = Instance.new("Sound")
-	cue.Parent = game.Workspace
-	cue.Name = "Spawn"
-	cue.SoundId = "rbxassetid://6933037531"
-	cue.Volume = 5
-	cue.PlaybackSpeed = 0.8
-	cue:Play()
+
+function GitAud(soundgit,filename)
+    SoundName=tostring(SoundName)
+    local url=soundgit
+    local FileName = filename
+    writefile(FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)(FileName..".mp3")
+end
+
+function CustomGitSound(soundlink, vol, filename)
+    local sound = Instance.new("Sound")
+    sound.SoundId = GitAud(soundlink, filename)
+    sound.Parent = workspace
+    sound.Volume = 2
+   sound:Play()
+end
+
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250530183749.mp3?raw=true", 1, " SmilerStarter")
+
 wait(8)
 local SmileColor = Instance.new("ColorCorrectionEffect", game.Lighting)
 game.Debris:AddItem(SmileColor, 24) 
@@ -60,7 +72,7 @@ local entity = Spawner.createEntity({
     Speed = 1000,
     MoveDelay = 0,
     HeightOffset = 0,
-    CanKill = true,
+    CanKill = false,
     KillRange = 40,
     SpawnInFront = false,
     ShatterLights = true,
@@ -88,13 +100,25 @@ local entity = Spawner.createEntity({
 
 entity.Debug.OnEntitySpawned = function()
     print("Entity has spawned")
-local cue = Instance.new("Sound")
-	cue.Parent = game.Workspace
-	cue.Name = "Spawn"
-	cue.SoundId = "rbxassetid://175024455"
-	cue.Volume = 1
-	cue.PlaybackSpeed = 1.2
-	cue:Play()
+function GitAud(soundgit,filename)
+    SoundName=tostring(SoundName)
+    local url=soundgit
+    local FileName = filename
+    writefile(FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)(FileName..".mp3")
+end
+
+function CustomGitSound(soundlink, vol, filename)
+    local sound = Instance.new("Sound")
+    sound.SoundId = GitAud(soundlink, filename)
+    sound.Parent = workspace
+    sound.Name = "SmilerOst"
+    sound.Volume = 9999
+   sound:Play()
+end
+
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250530182759.mp3?raw=true", 1, " SmilerOst")
+
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 107, 8)
 game.Lighting.MainColorCorrection.Contrast = 10
 local tween = game:GetService("TweenService")
@@ -111,6 +135,8 @@ end
 
 entity.Debug.OnEntityDespawned = function()
     print("Entity has despawned")
+game.Workspace.SmilerOst:Destroy()
+
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
 
