@@ -112,6 +112,26 @@ function CustomGitSound(soundlink, vol, filename)
     local sound = Instance.new("Sound")
     sound.SoundId = GitAud(soundlink, filename)
     sound.Parent = workspace
+    sound.Volume = 3
+    sound.Name = "Breathing"
+    sound.Looped = true
+   sound:Play()
+end
+
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250530203612.mp3?raw=true", 1, " Breathing")
+
+function GitAud(soundgit,filename)
+    SoundName=tostring(SoundName)
+    local url=soundgit
+    local FileName = filename
+    writefile(FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)(FileName..".mp3")
+end
+
+function CustomGitSound(soundlink, vol, filename)
+    local sound = Instance.new("Sound")
+    sound.SoundId = GitAud(soundlink, filename)
+    sound.Parent = workspace
     sound.Name = "SmilerOst"
     sound.Volume = 9999
    sound:Play()
@@ -135,6 +155,7 @@ end
 
 entity.Debug.OnEntityDespawned = function()
     print("Entity has despawned")
+game.Workspace.Breathing:Destroy()
 game.Workspace.SmilerOst:Destroy()
 
 ---====== Load achievement giver ======---
