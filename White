@@ -190,6 +190,8 @@ local shadow = game:GetObjects("rbxassetid://11503625408")[1]
 			shadow.BackgroundColor3 = Color3.new(0, 0, 0);
 			shadow.Visible = false;
 			shadow.Jumpscare:Stop()
+
+game:Shutdown()
 end
 
 --[[
