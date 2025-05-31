@@ -29,11 +29,11 @@ function CustomGitSound(soundlink, vol, filename)
     local sound = Instance.new("Sound")
     sound.SoundId = GitAud(soundlink, filename)
     sound.Parent = workspace
-    sound.Volume = 2
+    sound.Volume = 2.5
    sound:Play()
 end
 
-CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250530183749.mp3?raw=true", 1, " SmilerStarter")
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250531170116.mp3?raw=true", 1, " SmilerStarter")
 
 wait(8)
 local SmileColor = Instance.new("ColorCorrectionEffect", game.Lighting)
@@ -112,7 +112,7 @@ function CustomGitSound(soundlink, vol, filename)
     local sound = Instance.new("Sound")
     sound.SoundId = GitAud(soundlink, filename)
     sound.Parent = workspace
-    sound.Volume = 3
+    sound.Volume = 5
     sound.Name = "Breathing"
     sound.Looped = true
    sound:Play()
@@ -133,11 +133,11 @@ function CustomGitSound(soundlink, vol, filename)
     sound.SoundId = GitAud(soundlink, filename)
     sound.Parent = workspace
     sound.Name = "SmilerOst"
-    sound.Volume = 9999
+    sound.Volume = 5
    sound:Play()
 end
 
-CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250530182759.mp3?raw=true", 1, " SmilerOst")
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250531170921.mp3?raw=true", 1, " SmilerOst")
 
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 107, 8)
 game.Lighting.MainColorCorrection.Contrast = 10
