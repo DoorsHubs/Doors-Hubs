@@ -78,13 +78,23 @@ require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("
         RA.RightShoulder.C1 = RC1 * CFrame.Angles(math.rad(-90), math.rad(-15), 0)
         LA.LeftShoulder.C1 = LC1 * CFrame.new(-0.2, -0.3, -0.5) * CFrame.Angles(math.rad(-125), math.rad(25), math.rad(25))
 
-local cue = Instance.new("Sound")
-	cue.Parent = game.Workspace
-	cue.Name = "Spawn"
-	cue.SoundId = "rbxassetid://5801257793"
-	cue.Volume = 5
-	cue.PlaybackSpeed = 1
-	cue:Play()
+function GitAud(soundgit,filename)
+    SoundName=tostring(SoundName)
+    local url=soundgit
+    local FileName = filename
+    writefile(FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)(FileName..".mp3")
+end
+
+function CustomGitSound(soundlink, vol, filename)
+    local sound = Instance.new("Sound")
+    sound.SoundId = GitAud(soundlink, filename)
+    sound.Parent = workspace
+    sound.Volume = 3
+   sound:Play()
+end
+
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250531202902.mp3?raw=true", 1, " PickSound")
 
 local SmileColor = Instance.new("ColorCorrectionEffect", game.Lighting)
 game.Debris:AddItem(SmileColor, 24) 
