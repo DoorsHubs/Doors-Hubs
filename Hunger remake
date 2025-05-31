@@ -1,3 +1,8 @@
+local hunger = game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(1000)
+game:GetService("ReplicatedStorage").GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Hunger [Opened Door]"
+end)
+
 local cue = Instance.new("Sound")
 	cue.Parent = game.Workspace
 	cue.Name = "Spawn"
@@ -58,6 +63,7 @@ tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 
 local TweenService = game:GetService("TweenService")
 local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(250, 0, 0)})
 TW:Play()
+hunger:Disconnect()
 -- Check current room
 local entityModel = true
 local latestRoom = game.ReplicatedStorage.GameData.LatestRoom.Value
@@ -82,12 +88,37 @@ wait(3)
 
 task.spawn(function()
     while Kill == true do
-        task.wait(1)  -- Reduce the wait time to increase damage speed
+        task.wait(0.2)  -- Reduce the wait time to increase damage speed
         local _, camera = game.Workspace.CurrentCamera:WorldToViewportPoint(part.Position)
         
         -- If the player is not looking at DepthTer, they take damage
         if not camera then
-            game.Players.LocalPlayer.Character.Humanoid:TakeDamage(10)
+
+local FPS = 5
+    local clock = tick()
+        while clock + 1.6 / FPS > tick() do end
+    wait()
+    clock = tick()
+
+game.Players.LocalPlayer.Character.Humanoid:TakeDamage(5)
+
+function GitAud(soundgit,filename)
+    SoundName=tostring(SoundName)
+    local url=soundgit
+    local FileName = filename
+    writefile(FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)(FileName..".mp3")
+end
+
+function CustomGitSound(soundlink, vol, filename)
+    local sound = Instance.new("Sound")
+    sound.SoundId = GitAud(soundlink, filename)
+    sound.Parent = workspace
+    sound.Volume = 0.8
+   sound:Play()
+end
+
+CustomGitSound("https://raw.githubusercontent.com/Voorproo/Silence/refs/heads/main/RPReplay_Final1748135502%20(mp3cut.net).mp3", 1, "hunger")
         end
         
         -- If the player dies, update the death cause and show the death hint
