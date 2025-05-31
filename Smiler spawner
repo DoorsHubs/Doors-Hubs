@@ -270,7 +270,9 @@ end
 
 Spawner.runEntity(entity)
 
-wait(15)
+wait(35)
 local TweenService = game:GetService("TweenService")
 local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
 TW:Play()
+game.Workspace.Breathing:Destroy()
+game.Workspace.SmilerOst:Destroy()
