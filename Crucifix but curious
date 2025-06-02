@@ -1,0 +1,159 @@
+ local spawnedRooms = {} -- Track rooms that already spawned crucifix
+
+function spawncruxy(posy)
+    local currentRoom = game.ReplicatedStorage.GameData.LatestRoom.Value
+    if spawnedRooms[currentRoom] then return end
+
+function GitAud(soundgit,filename)
+    SoundName=tostring(SoundName)
+    local url=soundgit
+    local FileName = filename
+    writefile(FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)(FileName..".mp3")
+end
+
+function CustomGitSound(soundlink, vol, filename)
+    local sound = Instance.new("Sound")
+    sound.SoundId = GitAud(soundlink, filename)
+    sound.Parent = workspace
+    sound.Volume = 2
+   sound:Play()
+end
+
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/iLoveYt.net_YouTube_DOORS-Roblox-UST-Mischievous-Light_Media_yBpWy_dawHk_004_360p%20(1).mp3?raw=true", 1, " StartTheme")
+
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(0, 0, 0)
+game.Lighting.MainColorCorrection.Contrast = 10
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+
+local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
+caption.TextColor3 = Color3.fromRGB(255, 251, 0)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Curious Light: Find the crucifix",true)
+
+    local crucifixTool = game:GetObjects("rbxassetid://11631916882")[1]
+    crucifixTool.Parent = game.Workspace
+    crucifixTool.Name = "Cruxy"
+    crucifixTool.Handle.Position = posy
+    crucifixTool.Handle.Anchored = true
+
+    local xy = math.random(-90, 90)
+    crucifixTool.Handle.CFrame = CFrame.lookAt(crucifixTool.Handle.Position, crucifixTool.Handle.Position - Vector3.new(xy, 0, 0))
+    crucifixTool.Handle.Rotation = Vector3.new(0, xy, -90)
+
+    local lightRed = Instance.new("PointLight", crucifixTool.Handle)
+    lightRed.Brightness = 10000
+    lightRed.Color = Color3.fromRGB(255, 0, 0)
+    lightRed.Range = 1
+
+    local lightBlue = Instance.new("PointLight", crucifixTool.Handle)
+    lightBlue.Brightness = 3
+    lightBlue.Color = Color3.fromRGB(255, 251, 0)
+    lightBlue.Range = 10
+
+    local prompty = Instance.new("ProximityPrompt", crucifixTool.Handle)
+    prompty.MaxActivationDistance = 5
+    prompty.ObjectText = "Custom"
+    prompty.RequiresLineOfSight = true
+    prompty.Style = Enum.ProximityPromptStyle.Custom
+
+    prompty.Triggered:Connect(function()
+        crucifixTool:Destroy()
+
+_G.CR_Uses = 1
+_G.CR_IsCurious = true
+_G.CR_HoldKeyRequired = "false"
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/PublicScripts/refs/heads/main/crucifix_E_A_A"))()
+
+        local Plr = game.Players.LocalPlayer
+        local Char = Plr.Character or Plr.CharacterAdded:Wait()
+        local Hum = Char:WaitForChild("Humanoid")
+        local RA = Char:WaitForChild("RightUpperArm")
+        local LA = Char:WaitForChild("LeftUpperArm")
+        local RC1 = RA.RightShoulder.C1
+        local LC1 = LA.LeftShoulder.C1
+
+        RA.Name = "R_Arm"
+        LA.Name = "L_Arm"
+        RA.RightShoulder.C1 = RC1 * CFrame.Angles(math.rad(-90), math.rad(-15), 0)
+        LA.LeftShoulder.C1 = LC1 * CFrame.new(-0.2, -0.3, -0.5) * CFrame.Angles(math.rad(-125), math.rad(25), math.rad(25))
+
+function GitAud(soundgit,filename)
+    SoundName=tostring(SoundName)
+    local url=soundgit
+    local FileName = filename
+    writefile(FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)(FileName..".mp3")
+end
+
+function CustomGitSound(soundlink, vol, filename)
+    local sound = Instance.new("Sound")
+    sound.SoundId = GitAud(soundlink, filename)
+    sound.Parent = workspace
+    sound.Volume = 3
+   sound:Play()
+end
+
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250531202902.mp3?raw=true", 1, " PickSound")
+
+local SmileColor = Instance.new("ColorCorrectionEffect", game.Lighting)
+game.Debris:AddItem(SmileColor, 24) 
+SmileColor.Name = "SmileWarn" 
+SmileColor.TintColor = Color3.fromRGB(255, 251, 0)
+SmileColor.Saturation = -0.7 
+SmileColor.Contrast = 0.2 
+
+-- Smooth transition back to normal
+game.TweenService:Create(SmileColor, TweenInfo.new(10), {
+    TintColor = Color3.fromRGB(255, 255, 255),
+    Saturation = 0,
+    Contrast = 0
+}):Play()
+
+-- Camera shake
+local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
+local camera = game.Workspace.CurrentCamera
+local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
+    camera.CFrame = camera.CFrame * shakeCf
+end)
+
+camShake:Start()
+camShake:ShakeOnce(10, 3, 0.1, 6, 2, 0.5)
+        
+        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("You feel stronger than before..", true)
+        wait(5)
+
+        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("You found a crucifix!", true)
+        wait(3)
+        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("It can help you with stationary entities, you need to click on them", true)
+        wait(3)
+        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("But don't use it on running entities", true)
+        wait(3)
+        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("And its a crucifix on anything!", true)
+        wait(3)
+        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("So don't click randomly anywhere except stationary entities.", true)
+    end)
+
+    spawnedRooms[currentRoom] = true
+end
+
+-- Super rare spawn system (1 in VERY large number)
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
+    local lastroom = game.ReplicatedStorage.GameData.LatestRoom.Value
+    if spawnedRooms[lastroom] then return end
+
+    for _, v in next, game.Workspace.CurrentRooms[lastroom].Assets:GetDescendants() do
+        if v.Name == "Table" and v:FindFirstChild("Main") then
+            local randomy = math.random(1, 100)
+            if randomy == 1 then
+                local positio = v.Main.Position + Vector3.new(0, 1.8, 0)
+                spawncruxy(positio)
+                break
+            end
+        end
+    end
+end)
