@@ -125,7 +125,9 @@ camShake:ShakeOnce(10, 3, 0.1, 6, 2, 0.5)
 
         require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("You found a crucifix!", true)
         wait(3)
-        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("Maybe it can help you with some custom entities", true)
+        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("Maybe it can help you on some custom entities", true)
+        wait(3)
+        require(Plr.PlayerGui.MainUI.Initiator.Main_Game).caption("But it can't help you on stationary entities", true)
     end)
 
     spawnedRooms[currentRoom] = true
