@@ -4,7 +4,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.MainUI.CheckPlatform.Input.pc:D
 game:GetService("Players").LocalPlayer.PlayerGui.MainUI.CheckPlatform.Input.mobile.Icon:Destroy()
 game:GetService("Players").LocalPlayer.PlayerGui.MainUI.CheckPlatform.Input.mobile.Text = "Loading"
 game:GetService("Players").LocalPlayer.PlayerGui.MainUI.CheckPlatform.Desc.Text = "Script is loading. Hold on!"
-game:GetService("Players").LocalPlayer.PlayerGui.MainUI.CheckPlatform.Title.Text = "Impossible Mode Recoded"
+game:GetService("Players").LocalPlayer.PlayerGui.MainUI.CheckPlatform.Title.Text = "Impossible Mode Re-Degenerate"
 wait(3)
 game:GetService("Players").LocalPlayer.PlayerGui.MainUI.CheckPlatform.Input.mobile.Text = "Loading: 5%"
 wait(0.2)
