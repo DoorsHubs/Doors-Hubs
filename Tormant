@@ -8,7 +8,7 @@ local entity = Spawner.createEntity({
     CustomName = "Torment",
     Model = "rbxassetid://87864629305938", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
     Speed = 100,
-    MoveDelay = 5,
+    MoveDelay = 10,
     HeightOffset = 0,
     CanKill = true,
     KillRange = 40,
@@ -30,7 +30,7 @@ local entity = Spawner.createEntity({
     },
     ResistCrucifix = false,
     BreakCrucifix = true,
-    DeathMessage = {"You died to who called Smiler", "That one is very fast", "Try hide from it at any costs", "You can do it!", "Try better next times!"},
+    DeathMessage = {"You died to who called Torment", "That one is very fast", "Try hide from it at any costs", "You can do it!", "Try better next times!"},
     IsCuriousLight = true
 })
 
@@ -38,10 +38,30 @@ local entity = Spawner.createEntity({
 
 entity.Debug.OnEntitySpawned = function()
     print("Entity has spawned")
+function GitAud(soundgit,filename)
+    SoundName=tostring(SoundName)
+    local url=soundgit
+    local FileName = filename
+    writefile(FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)(FileName..".mp3")
+end
+
+function CustomGitSound(soundlink, vol, filename)
+    local sound = Instance.new("Sound")
+    sound.SoundId = GitAud(soundlink, filename)
+    sound.Parent = workspace
+    sound.Volume = 1
+    sound.Name = "Giggling"
+    sound.Looped = true
+   sound:Play()
+end
+
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250603113316.mp3?raw=true", 1, " StartTheme")
 end
 
 entity.Debug.OnEntityDespawned = function()
     print("Entity has despawned")
+game.Workspace.Giggling:Destroy()
 end
 
 entity.Debug.OnEntityStartMoving = function()
