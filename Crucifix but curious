@@ -95,6 +95,7 @@ function CustomGitSound(soundlink, vol, filename)
     local sound = Instance.new("Sound")
     sound.SoundId = GitAud(soundlink, filename)
     sound.Parent = workspace
+    sound.Name = "Strike1"
     sound.Volume = 3
    sound:Play()
 end
