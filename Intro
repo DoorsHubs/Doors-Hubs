@@ -26,7 +26,7 @@ require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("
 wait(4)
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(255, 122, 122)
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("[Guestly]: Orginial by Oof/ Recoded by Guestly",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("[Guestly]: Original by Oof/ Recoded by Guestly",true)
 wait(4)
 local caption = game.Players.LocalPlayer:WaitForChild("PlayerGui").MainUI.MainFrame.Caption
 caption.TextColor3 = Color3.fromRGB(255, 122, 122)
