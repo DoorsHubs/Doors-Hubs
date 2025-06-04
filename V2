@@ -21,7 +21,7 @@ function CustomGitSound(soundlink, vol, filename)
    sound:Play()
 end
 
-CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250530220116.mp3?raw=true", 1, " StartTheme")
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250530220116.mp3?raw=true", 1, " GuidingOst")
 
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(0, 0, 0)
 game.Lighting.MainColorCorrection.Contrast = 10
