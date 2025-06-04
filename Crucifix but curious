@@ -100,7 +100,7 @@ function CustomGitSound(soundlink, vol, filename)
    sound:Play()
 end
 
-CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250531202902.mp3?raw=true", 1, " PickSound")
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/lv_0_20250531202902.mp3?raw=true", 1, " PickSound2")
 
 local SmileColor = Instance.new("ColorCorrectionEffect", game.Lighting)
 game.Debris:AddItem(SmileColor, 24) 
