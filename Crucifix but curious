@@ -21,7 +21,7 @@ function CustomGitSound(soundlink, vol, filename)
    sound:Play()
 end
 
-CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/iLoveYt.net_YouTube_DOORS-Roblox-UST-Mischievous-Light_Media_yBpWy_dawHk_004_360p%20(1).mp3?raw=true", 1, " StartTheme")
+CustomGitSound("https://github.com/DoorsHubs/Tutorial/raw/refs/heads/main/iLoveYt.net_YouTube_DOORS-Roblox-UST-Mischievous-Light_Media_yBpWy_dawHk_004_360p%20(1).mp3?raw=true", 1, " CuriousOst")
 
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(0, 0, 0)
 game.Lighting.MainColorCorrection.Contrast = 10
